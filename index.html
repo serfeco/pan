@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quieres pan?</title>
+</head>
+<body >
+    <script>
+      
+        var imgElement = document.createElement("img");
+    
+        let pregunta = confirm("Quieres pan?" )
+   console.log(pregunta)
+
+   if(pregunta){
+        imgElement.src = "pan.jpeg"; 
+    
+      
+        imgElement.style.width = "100vw";
+        imgElement.style.height = "100vh";
+        imgElement.style.objectFit = "cover"; 
+    
+      
+        document.body.appendChild(imgElement);
+   }else{
+    imgElement.src = "emoji.jpeg"; 
+    
+      
+    imgElement.style.width = "100vw";
+    imgElement.style.height = "100vh";
+    imgElement.style.objectFit = "cover"; 
+
+  
+    document.body.appendChild(imgElement);
+   }
+      </script>
+</body>
+</html>
+<style>
+    body {min-height:  1000px;}
+  </style>
